@@ -1,0 +1,25 @@
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+
+.accordion-title {
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.open .fa-chevron-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.accordion-item .fa-chevron-down {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}

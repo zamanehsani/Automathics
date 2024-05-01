@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!isOpen) {
         item.classList.add('open');
-        content.style.maxHeight = content.scrollHeight + 'px';
+
+        content.style.maxHeight = content.scrollHeight+ 'px';
       }
     });
   });

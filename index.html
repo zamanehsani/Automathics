@@ -1,752 +1,1470 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="windows-1252">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- this is the tab icons -->
-	<link href="/favicon.ico" rel="icon" />
-	 <meta property="og:title" content="Automathics" />
-	 <meta property="og:description" content="Master Linear Algebra for Quantum Computing in just 30 days! Overcome your math-phobia with step-by-step guidance from Automathics, an interactive bootcamp for high school coders, led by some of the world's leading quantum experts." />
-	 <meta property="og:image" content="https://automathics.com/img/1.png" />
-	 <meta property="og:image" content="https://zamanehsani.github.io/Automathics/img/1.png" />
-	 <meta property="og:url" content="https://automathics.com" />
-	 <meta property="og:type" content="website" />
-	 <meta name="keywords" content="Master Linear Algebra, Quantum Computing, math-phobia, Automathics, interactive bootcamp, high school coders, quantum experts, 30-day program">
+    <!-- this is the tab icons -->
+    <link href="/favicon.ico" rel="icon" />
+    <meta property="og:title" content="Scared of Math?" />
+    <meta
+      property="og:description"
+      content="Master Linear Algebra for Quantum Computing in just 30 days! Overcome your math-phobia with step-by-step guidance from Automathics, an interactive bootcamp for high school coders, led by some of the world's leading quantum experts." />
+    <meta property="og:image" content="https://automathics.com/img/1.png" />
+    <meta
+      property="og:image"
+      content="https://zamanehsani.github.io/Automathics/img/1.png" />
+    <meta property="og:url" content="https://automathics.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="keywords"
+      content="Master Linear Algebra, Quantum Computing, math-phobia, Automathics, interactive bootcamp, high school coders, quantum experts, 30-day program" />
 
-	 <meta property="og:site_name" content="Automathics" />
-	 <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Automathics" />
+    <meta property="og:locale" content="en_US" />
 
-	<title>Automathics</title>
-	<meta name="description" content="Master Linear Algebra for Quantum Computing in just 30 days! Overcome your math-phobia with step-by-step guidance from Automathics, an interactive bootcamp for high school coders, led by some of the world's leading quantum experts." >
-	<meta name="theme-color" content="#9333ea" />
+    <title>Automathics</title>
+    <meta
+      name="description"
+      content="Master Linear Algebra for Quantum Computing in just 30 days! Overcome your math-phobia with step-by-step guidance from Automathics, an interactive bootcamp for high school coders, led by some of the world's leading quantum experts." />
+    <meta name="theme-color" content="#9333ea" />
 
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="assets/styles.css">
-	<link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
 
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-836NJJ2BW4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-836NJJ2BW4');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-836NJJ2BW4"></script>
 
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-836NJJ2BW4");
+    </script>
 
-<script>
-tailwind.config = {
-	theme: {
-		extend: {
-			colors: {
-				clifford: '#da373d',
-			},
-			fontFamily: {
-						sans: ['Inter'],
-				},
-		}
-	}
-}
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              sans: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
 
+    <style>
+      .grad {
+        background-image: linear-gradient(
+          to right bottom,
+          #1e1b4b 50%,
+          #4338ca
+        );
+      }
+    </style>
 
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "419012570751817");
+      fbq("track", "PageView");
+    </script>
 
-</script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=419012570751817&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="relative isolate px-6 lg:py-24 lg:px-8">
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
+      </div>
 
-
-<style>
-  .grad {
-    background-image: linear-gradient(to right bottom, #1e1b4b 50%, #4338ca);
-  }
-</style>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '419012570751817');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-	<img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=419012570751817&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-</head>
-<body>
-<div class="relative isolate px-6 lg:py-24 lg:px-8">
-	<div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-		<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-	</div>
-
-	<div class="mx-auto max-w-6xl py-8 sm:py-20 lg:py-20">
-		<div class="text-center">
-			<h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-6xl">Ever felt that<span style="color:#ff3300;"> <u>gut-wrenching</u> fear </span>at the mere mention of the word<span style="color:#ff3300;"> &ldquo;MATH&rdquo;?</span></h1>
-			<p class="mt-6 text-lg leading-8 text-gray-600">Your peers&nbsp;<strong>laughing&nbsp;</strong>at you when they catch you&nbsp;<strong><u>learning</u></strong>...</p>
-			<p class="mt-6 text-lg leading-8 text-gray-600">Looking at&nbsp;<strong>algorithms&nbsp;</strong>like they&#39;re some&nbsp;<strong><u>alien gibberish</u></strong>...</p>
-			<p class="mt-6 text-lg leading-8 text-gray-600">Want to&nbsp;<strong>develop&nbsp;</strong>the next breakthrough but&nbsp;<strong><u>don&#39;t know how</u></strong>...</p>
-			<p class="mt-6 text-lg leading-8 text-gray-600"><strong>Hey, I&#39;m Husayn Gokal</strong></p>
-			<p class="mt-6 text-lg leading-8 text-gray-600">And not too long ago, I was exactly where you are right now.</p>
-			<p class="mt-6 text-lg leading-8 text-gray-600">Let me take you on a journey, one that transformed me from a <strong><span style="color:#e74c3c;">math-phobic teen</span></strong> to a <span style="color:#8832d1;"><strong>quantum computing aficionado</strong></span>, all within just <em><strong>six months</strong></em>...</p>
-			<p class="mt-6 text-lg leading-8 text-gray-600"></p>
-				<!-- <div class="mt-10 flex items-center justify-center gap-x-6">
+      <div class="mx-auto max-w-6xl py-8 sm:py-20 lg:py-20">
+        <div class="text-center">
+          <h1
+            class="text-2xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Ever felt that<span style="color: #ff3300">
+              <u>gut-wrenching</u> fear </span
+            >at the mere mention of the word<span style="color: #ff3300">
+              &ldquo;MATH&rdquo;?</span
+            >
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Your peers&nbsp;<strong>laughing&nbsp;</strong>at you when they
+            catch you&nbsp;<strong><u>learning</u></strong
+            >...
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Looking at&nbsp;<strong>algorithms&nbsp;</strong>like they&#39;re
+            some&nbsp;<strong><u>alien gibberish</u></strong
+            >...
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Want to&nbsp;<strong>develop&nbsp;</strong>the next breakthrough
+            but&nbsp;<strong><u>don&#39;t know how</u></strong
+            >...
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            <strong>Hey, I&#39;m Husayn Gokal</strong>
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            And not too long ago, I was exactly where you are right now.
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Let me take you on a journey, one that transformed me from a
+            <strong
+              ><span style="color: #e74c3c">math-phobic teen</span></strong
+            >
+            to a
+            <span style="color: #8832d1"
+              ><strong>quantum computing aficionado</strong></span
+            >, all within just <em><strong>six months</strong></em
+            >...
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600"></p>
+          <!-- <div class="mt-10 flex items-center justify-center gap-x-6">
 								<a href="#" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Get started</a>
 							<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
 						</div> -->
-		</div>
-	</div>
-</div>
+        </div>
+      </div>
+    </div>
 
-<div class="relative isolate overflow-hidden bg-gray-900 px-6 py-8 sm:py-16 lg:overflow-visible lg:px-0">
-<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-4">
-<div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-	<div class="lg:pr-4">
-		<div class="lg:max-w-lg">
-			<p class="mt-6 text-lg leading-8 text-gray-600">
-				<span class="pt-5 text-xl lg:text-2xl text-white">Yeah, you read that right. </span> 
-				<span style="color:#e74c3c;"> 
-					<span class="pt-5 text-xl lg:text-2xl text-slate-700"> 
-						<span class="font-extrabold"> </span> 
-					</span> 
-				</span> 
-				<span style="color:#8832d1;"> 
-					<span class="pt-5 text-xl lg:text-2xl text-red-600"> 
-						<span class="font-extrabold">SIX MONTHS!</span> 
-					</span> 
-				</span>
-			</p>
-			<h2 class="mt-2 tracking-tight text-gray-300 ">I was a kid with big dreams to break into the quantum industry, but with one 
-				<span class="line-through">tiny</span> massive problem&mdash;math was my kryptonite.
-			</h2>
-			<p class="mt-4 text-base leading-7 text-gray-300">I mean, the mere sight of numbers and equations would send me into a full-blown panic attack. And trust me, in the quantum world, that&rsquo;s like wanting to swim without getting wet. Impossible, right?</p>
-		</div>
-	</div>
-</div>
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 px-6 py-8 sm:py-16 lg:overflow-visible lg:px-0">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-4">
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div class="lg:pr-4">
+            <div class="lg:max-w-lg">
+              <p class="mt-6 text-lg leading-8 text-gray-600">
+                <span class="pt-5 text-xl lg:text-2xl text-white"
+                  >Yeah, you read that right.
+                </span>
+                <span style="color: #e74c3c">
+                  <span class="pt-5 text-xl lg:text-2xl text-slate-700">
+                    <span class="font-extrabold"> </span>
+                  </span>
+                </span>
+                <span style="color: #8832d1">
+                  <span class="pt-5 text-xl lg:text-2xl text-red-600">
+                    <span class="font-extrabold">SIX MONTHS!</span>
+                  </span>
+                </span>
+              </p>
+              <h2 class="mt-2 tracking-tight text-gray-300">
+                I was a kid with big dreams to break into the quantum industry,
+                but with one <span class="line-through">tiny</span> massive
+                problem&mdash;math was my kryptonite.
+              </h2>
+              <p class="mt-4 text-base leading-7 text-gray-300">
+                I mean, the mere sight of numbers and equations would send me
+                into a full-blown panic attack. And trust me, in the quantum
+                world, that&rsquo;s like wanting to swim without getting wet.
+                Impossible, right?
+              </p>
+            </div>
+          </div>
+        </div>
 
-<div class="flex justify-center lg:-ml-12 lg:-mt-1 p-4 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-    <img alt="" class="w-full h-auto object-cover rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10" src="img/husayn.jpeg" />
-</div>
-<!-- the below part is commented as it is modified and added in the above section -->
-<!-- <div class="-ml-12 -mt-1 p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div
+          class="flex justify-center lg:-ml-12 lg:-mt-1 p-4 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <img
+            alt=""
+            class="w-full h-auto object-cover rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+            src="img/husayn.jpeg" />
+        </div>
+        <!-- the below part is commented as it is modified and added in the above section -->
+        <!-- <div class="-ml-12 -mt-1 p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
 	<img alt="" class="w-full h-auto object-cover rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10" src="img/husayn.jpeg" />
 </div> -->
-<!-- <img alt="" class=" w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="img/husayn.jpeg" /> -->
+        <!-- <img alt="" class=" w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="img/husayn.jpeg" /> -->
 
-<div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-<div class="lg:pr-4">
-<div class="max-w-xl text-base leading-7 text-gray-300 lg:max-w-lg">
-	<p>I was coding in Qiskit for around 3 years at the time. I even became a Qiskit Advocate!</p> 
-	<p class="mt-3">But guess what? <strong>The industry still felt <span style="color:#e74c3c;">light years away.</span></strong></p>
-	<p>Because let&rsquo;s face it, without a solid grasp of math, I was a no-show. A high school coder with lofty ambitions, grounded by my own fears.</p>
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div class="lg:pr-4">
+            <div class="max-w-xl text-base leading-7 text-gray-300 lg:max-w-lg">
+              <p>
+                I was coding in Qiskit for around 3 years at the time. I even
+                became a Qiskit Advocate!
+              </p>
+              <p class="mt-3">
+                But guess what?
+                <strong
+                  >The industry still felt
+                  <span style="color: #e74c3c">light years away.</span></strong
+                >
+              </p>
+              <p>
+                Because let&rsquo;s face it, without a solid grasp of math, I
+                was a no-show. A high school coder with lofty ambitions,
+                grounded by my own fears.
+              </p>
 
-	<ul class="mt-2 space-y-3 text-gray-300" role="list">
-		<li class="flex gap-x-3"><span>Then came the turning point. After three years of dodging math like it was the plague, I hit rock bottom. That&rsquo;s when it hit me&mdash;enough was enough. I <strong>HAD</strong> to face my fears <strong><em>head-on</em></strong>. </span></li>
-		<li class="flex gap-x-3"><span>So, I embarked on a grueling six-month journey, diving headfirst into every online course, tutor, and learning method available to conquer my math-phobia. </span></li>
-		<li class="flex gap-x-3"><span>And you know what? <span style="color:#27ae60;"><strong class="font-bold text-xl"> It worked!</strong></span> </span></li>
-		<li class="flex gap-x-3"><span>But not without its <strong><span style="color:#c0392b;">fair share of pitfalls</span></strong>. For <strong>every step forward</strong>, I felt like I took <span style="color:#c0392b;"><em><strong>two steps back</strong></em></span>, wading through a swamp of unnecessary concepts and theories that did nothing but waste my time. </span></li>
-		<li class="flex gap-x-3"><span>That&rsquo;s when the light bulb went off. <span style="color:#e74c3c;"><strong><em>Why isn&rsquo;t there a straight path?</em></strong></span> A clear, no-nonsense guide tailored for folks like us? </span></li>
-		<li class="flex gap-x-3"><span>Enter <span style="color:#8832d1;"><strong>Automathics</strong></span>. My brainchild. My answer to the prayers of high school coders everywhere who dream of quantum computing, but shudder at the thought of math. </span></li>
-	</ul>
+              <ul class="mt-2 space-y-3 text-gray-300" role="list">
+                <li class="flex gap-x-3">
+                  <span
+                    >Then came the turning point. After three years of dodging
+                    math like it was the plague, I hit rock bottom. That&rsquo;s
+                    when it hit me&mdash;enough was enough. I
+                    <strong>HAD</strong> to face my fears
+                    <strong><em>head-on</em></strong
+                    >.
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span
+                    >So, I embarked on a grueling six-month journey, diving
+                    headfirst into every online course, tutor, and learning
+                    method available to conquer my math-phobia.
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span
+                    >And you know what?
+                    <span style="color: #27ae60"
+                      ><strong class="font-bold text-xl">
+                        It worked!</strong
+                      ></span
+                    >
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span
+                    >But not without its
+                    <strong
+                      ><span style="color: #c0392b"
+                        >fair share of pitfalls</span
+                      ></strong
+                    >. For <strong>every step forward</strong>, I felt like I
+                    took
+                    <span style="color: #c0392b"
+                      ><em><strong>two steps back</strong></em></span
+                    >, wading through a swamp of unnecessary concepts and
+                    theories that did nothing but waste my time.
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span
+                    >That&rsquo;s when the light bulb went off.
+                    <span style="color: #e74c3c"
+                      ><strong
+                        ><em>Why isn&rsquo;t there a straight path?</em></strong
+                      ></span
+                    >
+                    A clear, no-nonsense guide tailored for folks like us?
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span
+                    >Enter
+                    <span style="color: #8832d1"
+                      ><strong>Automathics</strong></span
+                    >. My brainchild. My answer to the prayers of high school
+                    coders everywhere who dream of quantum computing, but
+                    shudder at the thought of math.
+                  </span>
+                </li>
+              </ul>
 
-	<h2 class="mt-4 text-xl font-bold">So,
-			<br />
-		What&rsquo;s the secret sauce?
-		<br />
-		<span class="font-normal">Well, let me tell you. </span>
-	</h2>
-</div>
-</div>
-</div>
-</div>
-
-<div aria-hidden="true" class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
-<div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-</div>
-</div>
-<!-- Aljebra and how it works section -->
-
-<div class="py-10">
-<div class="relative isolate mx-auto max-w-7xl px-6 lg:px-8"><!-- the top backdrop -->
-<div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-30">
-<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-10rem)] sm:w-[52.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-</div>
-
-<div class="mx-auto max-w-2xl lg:text-center">
-<p class="mt-2 text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">Linear Algebra, That&rsquo;s it!</p>
-
-<p class="mt-6 font-semibold text-lg leading-8 text-gray-600">The golden ticket to understanding quantum computing without drowning in university-level math. <strong>Without Calculus</strong>.</p>
-
-<p class="mt-6 text-lg leading-8 text-gray-600">Yeah, I know what you&rsquo;re thinking<br />
-<strong class="font-bold italic">&ldquo;But Husayn, don&rsquo;t we need calculus to even start learning Linear Algebra?&rdquo;</strong><strong class="font-bold italic"> </strong><br />
-That, my friends, is a <strong>myth</strong>. A tale as old as time, spun by colleges and universities to keep you in the loop of <strong><span style="color:#e74c3c;">endless prerequisites</span></strong>.</p>
-
-<h1 class="text-3xl font-bold leading-7 text-purple-700 mt-6">Here&rsquo;s the kicker:</h1>
-
-<p class=" text-lg leading-8 text-gray-600">Calculus is great and all, but it&rsquo;s not the hero of our story. Not for the quantum computing journey you&rsquo;re about to embark on. With Automathics, you dive straight into the good stuff. <strong>Linear Algebra</strong>&mdash;the backbone of quantum computing&mdash;stripped of all the fluff and filler that traditional education systems love to throw your way.</p>
-</div>
-
-<div class="mx-auto mt-8 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
-<h1 class="text-3xl font-bold leading-7 text-purple-700">Here&rsquo;s how it works.</h1>
-
-<p class="my-2 text-lg leading-8 text-gray-600">The bootcamp is <strong>30 days</strong> long, each day building on the ideas in the previous day.</p>
-
-<p class="text-lg leading-8 text-gray-600">We show you the practical, step-by-step actions necessary to quickly begin applying your knowledge using <strong>coding</strong>, <strong>algorithm</strong> and <strong>research-oriented assignments</strong>.</p>
-
-<p class="my-4 font-bold text-lg leading-8 text-gray-600">Here&rsquo;s just a glimpse of what you&rsquo;ll discover:</p>
-
-<div class="relative pl-16">
-	<dl>
-		<dt class="text-base font-semibold leading-7 text-gray-900">
-		<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">1</span></div>
-		Bootcamp Syllabus (Value - $149):</dt>
-		<dd class="mb-2 text-base leading-7 text-gray-600">Think of it as your treasure map outlining every adventure and challenge you&#39;ll face on this journey.</dd>
-	</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">2</span></div>
-	Daily Session Outline (Value - $99):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">No surprises here&mdash;just a clear breakdown of what each day holds in store for you.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">3</span></div>
-	LIVE Sessions + Recordings (Value - $499):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">This isn&rsquo;t your average lecture. It&rsquo;s an interactive, live-streamed brain workout with fellow math enthusiasts. Oh, missed a live session? No worries. Catch up with recordings and never miss a beat.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">4</span></div>
-	Core Text Access (PDFs) (Value - $249):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">Your arsenal of knowledge, accessible anywhere, anytime.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">5</span></div>
-	Discord Server Access (Value - $79):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">Your very own wizarding community, where help and camaraderie are just a message away.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">6</span></div>
-	24/7 Technical Support (Value - $179):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">Got a math emergency at 3 AM? We&rsquo;ve got you covered.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">7</span></div>
-	Quizzes, Assignments, and a Final Exam (Value - $199):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">Because what&rsquo;s a hero without their quests? Show off what you&rsquo;ve learned and how far you&rsquo;ve come. These are your nightly missions to test your skills and push your limits.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-<dl>
-	<dt class="text-base font-semibold leading-7 text-gray-900">
-	<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-bold text-center text-xl ">8</span></div>
-	Certificate of Participation (Value - $49):</dt>
-	<dd class="mb-2 text-base leading-7 text-gray-600">Proof that you embarked on this epic quest.</dd>
-</dl>
-</div>
-
-<div class="relative pl-16">
-	<dl>
-		<dt class="text-base font-semibold leading-7 text-gray-900">
-		<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600"><span class="h-6 w-6 text-white text-center text-xl ">9</span></div>
-		Certificate of Merit (Value - $99):</dt>
-		<dd class="mb-2 text-base leading-7 text-gray-600">For the champions who surpass even their own expectations.</dd>
-	</dl>
-</div>
-
-	<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-	</dl>
-</div>
-</div>
-</div>
-
-<!-- bonuses section -->
-<div class="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
-<div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-30">
-<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-10rem)] sm:w-[52.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-</div>
-
-<div class="mx-auto max-w-2xl lg:mx-0">
-<h2 class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">BONUSES:</h2>
-
-<p class="mt-2 text-lg leading-8 text-gray-600">We Love to Overdeliver</p>
-</div>
-
-<div class="mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500">Bonus #1 </span></div>
-
-<div class="group relative">
-<h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Daily Quote to Start the Day (Value - $59) </a></h3>
-
-<p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">A little inspiration to kick off your math journey every morning.</p>
-</div>
-</article>
-
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500" href="#">Bonus #2 </span></div>
-
-<div class="group relative">
-<h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Extra Resources (Value - $149) </a></h3>
-
-<p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">Because there&rsquo;s always more to explore, and we&rsquo;re here to guide you.</p>
-</div>
-</article>
-
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500" href="#">Bonus #3 </span></div>
-
-<div class="group relative">
-<h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Office Hour Sessions + Recordings (Value - $199) </a></h3>
-
-<p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">Need a deeper dive into a tricky concept? We&rsquo;ve got extra sessions just for that.</p>
-</div>
-</article>
-
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500" href="#">Bonus #4 </span></div>
-
-<div class="group relative">
-<h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Group Study Session (Value - $149) </a></h3>
-
-<p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">Team up with fellow adventurers to conquer the toughest quests.</p>
-</div>
-</article>
-
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500" href="#">Bonus #5 </span></div>
-
-<div class="group relative">
-<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Pre-Reading Material List (Value - $79) </a></h3>
-
-<p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Get a head start on the journey with recommended reads.</p>
-</div>
-</article>
-
-<article class="flex max-w-xl flex-col items-start justify-between">
-<div class="flex items-center gap-x-4 text-xs"><span class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500" href="#">Bonus #6 </span></div>
-
-<div class="group relative">
-<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"><a href="#">Supplementary Text Access (Value - $149) </a></h3>
-
-<p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Dive deeper into the math with additional texts, on us.</p>
-</div>
-</article>
-</div>
-
-<div class="mx-auto max-w-2xl mt-10 text-center ">
-<p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 ">All together, this package is valued at <span class="text-3xl text-purple-600">$2,385</span>.</p>
-
-<p class="leading-10 text-gray-600">To be honest, it&#39;s worth more than that!</p>
-</div>
-
-<!-- the bottom backdrop -->
-<div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-<div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-</div>
-</div>
-
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-	<div class="mx-auto max-w-4xl sm:text-center">
-		<p class="mt-5 text-lg leading-8 text-gray-600">This bootcamp is the sum total of the wisdom I gained over <strong>half a year of <u>struggle</u>, <u>failure</u>, <u>experimentation</u></strong>&mdash;and <strong><span style="color:#27ae60;">eventual success</span></strong>. If someone had handed me this roadmap at the start, imagine the hours, the days, heck, the months of frustration I could have bypassed.</p>
-		<p class="mt-4 text-lg leading-8 text-gray-600">Not just the time saved, but the leap towards a richer, more fulfilling journey into quantum computing.</p>
-		<h2 class="text-2xl my-4 font-bold tracking-tight text-purple-700 ">Are you beginning to get the picture?</h2>
-		<p class="mt-2 text-lg leading-8 text-gray-600"><strong>Here&#39;s the deal:</strong> Apply what we teach you in this bootcamp, and you could <u><strong>dodge a bullet</strong></u>. Six months of trial and error, confusion, and head-scratching in your quantum pursuit could <em><span style="color:#27ae60;"><strong>vanish</strong></span></em>.</p>
-		<h2 class="text-3xl my-4 font-bold tracking-tight text-purple-700">So given all that...</h2>
-		<p class="mt-2 text-xl font-bold leading-8 text-gray-600">How much would YOU invest for a shortcut like this?</p>
-		<p class="mt-2 text-xl leading-8 text-gray-600">I&rsquo;d have shelled out <strong><span style="color:#c0392b;">$2,000</span></strong> in a heartbeat back in the day, knowing it&rsquo;d save me buckets of time and stress.</p>
-		<p class="mt-2 text-xl leading-8 text-gray-600">Now when considering how to price this bootcamp, I realized that charging $2,000 would put this knowledge out of reach for most enthusiasts&mdash;the very people I wanted to help. And my goal here? <strong>To light the path for folks like you the dreamers, the doers, the future change makers of the quantum realm.</strong></p>
-	</div>
-
-	<div class="mx-auto mt-5 max-w-2xl rounded-3xl lg:mx-0 lg:flex lg:max-w-none">
-		<div class="lg:flex-auto lg:mt-8">
-			<p class="text-base text-xl mb-4 leading-7 text-gray-600">After a lot of thought, I decided to set the price at an affordable 
-				<span class="font-bold text-4xl text-purple-700 ">$299</span>.
-			</p>
-			<p class="text-base text-xl leading-7 text-gray-600"><span class="pb-3 block">This investment in yourself is one that will pay off <em><strong>many times over</strong></em>. </span> Because, as a quantum enthusiast, you have a rare gift: You&rsquo;re already in a field that is highly sought after. And this will only increase as time goes on. And when you use the tools I will give you (for less than the cost of a new Playstation), you can apply some leverage to those skills and results can be truly amazing.</p>
-		</div>
-
-		<div class="my-4 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-			<div class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center ">
-				<div class="mx-auto">
-					<p class="text-base font-bold text-purple-600">Linear Algebra Bootcamp</p>
-					<p class="text-sm text-purple-600">Starting on <strong>May 15</strong>.</p>
-					<p class="mt-3 flex items-baseline justify-center gap-x-2">
-						<span class="text-5xl font-bold tracking-tight text-purple-700">$299</span>
-					</p>
-					<script async
-						src="https://js.stripe.com/v3/buy-button.js">
-					</script>
-
-					<stripe-buy-button
-						buy-button-id="buy_btn_1P8qo8HpEhQbEAOITRtTBeyi"
-						publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY"
-					> 
-					</stripe-buy-button>
-				
-				</div>
-			</div> 
-		</div>
-	</div>
-</div>
-
-<div class="relative isolate overflow-hidden bg-gray-900 py-5 my-5 lg:overflow-visible ">
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-<div class="mx-auto mt-8 max-w-2xl rounded-3xl lg:mx-0 lg:flex lg:max-w-none gap-10">
-<div class="lg:flex-auto ">
-<p class="mt-4 text-xl leading-8 text-gray-300"><span style="color:#8832d1;"><span class="text-2xl text-extrabold text-white">Here&rsquo;s the best part:</span></span> if Calculus is still a mountain you want to climb, we&rsquo;re here with the gear, the guides, and the game plan to help you conquer it. Coming up within the <strong>first two weeks of June</strong>, we&rsquo;re launching our Calculus I program, perfect for those of you looking to broaden your mathematical toolkit even further.</p>
-<p class="mt-4 text-xl leading-8 text-gray-300">Imagine mastering both Linear Algebra and Calculus I, laying down a solid foundation that will supercharge your understanding of quantum computing and beyond.</p>
-<p class="mt-4 text-xl leading-8 text-gray-300">For those eager to jump ahead and secure their spot, we&rsquo;ve got a special deal: Pre-register for both Linear Algebra and Calculus I for just <span class="font-bold text-4xl text-purple-700 ">$499</span>.</p>
-<p class="mt-4 text-xl leading-8 text-gray-300">That&rsquo;s right&mdash;you get access to both powerhouse programs at an unbeatable price, ensuring you&rsquo;re well-equipped to tackle the challenges and opportunities of the quantum realm head-on.</p>
-<p class="mt-4 text-xl leading-8 text-gray-300">This bundled offer is designed for the go-getters, the ahead-of-the-curvers, the quantum enthusiasts who understand the value of a comprehensive math education. Don&rsquo;t miss your chance to be part of this. Secure your spot in our Calculus I program and take your first step towards becoming a math wiz with mastery over both Linear Algebra and Calculus I.</p>
-</div>
-
-	<div class="lg:sticky p-2 lg:mt-10 lg:w-full lg:max-w-md lg:flex-shrink-0 ">
-		<div class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
-				<div class="mx-auto">
-				<p class="text-base font-bold text-xl text-purple-600">Linear Algebra + Calculus I Bootcamp</p>
-				<p class="text-sm text-purple-600">Linear Algebra starting on <strong>May 15</strong>.</p>
-				<p class="text-sm text-purple-600"></p>
-				<p class="text-sm text-purple-600">Calculus I starting on <strong>August 1</strong>.</p>
-				<p class="mt-2 flex items-baseline justify-center gap-x-2"><span class="text-2xl line-through font-bold tracking-tight text-purple-600">$599</span></p>
-				<p class="mt-4 flex items-baseline justify-center gap-x-2">
-					<span class="text-5xl font-bold tracking-tight text-purple-700">$499</span>
-				</p>
-				
-				<script async
-					src="https://js.stripe.com/v3/buy-button.js">
-				</script>
-
-				<stripe-buy-button
-					buy-button-id="buy_btn_1P8rDUHpEhQbEAOItlp2GPoN"
-					publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY"
-				> 
-				</stripe-buy-button>
-				<p class="mt-4 text-xs leading-5 text-gray-600">25% Off | Early-Bird Offer</p>
-				</div>
-		</div> 
-	</div>
-</div>
-</div>
-
-
-<div aria-hidden="true" class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
-<div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-</div>
-</div>
-
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-	<div class="mx-auto max-w-4xl sm:text-center my-6">
-		<p class="mt-6 text-base text-xl leading-7 text-gray-600">Automathics isn&rsquo;t just about getting good at math. It&rsquo;s about turning math into your playground. From dread to headway, we make the journey feel like a game&mdash;your moves, your pace, automatic. Imagine shifting from &quot;I can&#39;t&quot; to &quot;I just did&quot; before you&rsquo;ve even blinked. That&#39;s us, breaking down barriers and building up brainpower.</p>
-		<h2 class="text-2xl my-4 font-bold tracking-tight text-purple-700 ">So then, to summarize - &ldquo;Why Automathics?&rdquo;</h2>
-		<p class="mt-2 text-base text-xl leading-7 text-gray-600">Because it&rsquo;s time. Time to break free from the chains of math-phobia. Time to use your summer not for aimless scrolling or video gaming but for transforming yourself into a math wizard, ready to tackle the quantum realm head-on.</p>
-		<p class="mt-2 text-base text-xl leading-7 text-gray-600">Automathics isn&rsquo;t just a bootcamp; it&rsquo;s a movement. A community of like-minded individuals ready to demystify math and stop numbers from bossing them around. And it all starts with you. Yes,&nbsp;<span class="font-bold text-lg">YOU!</span></p>
-		<p class="mt-2  text-base text-xl leading-7 text-gray-600">Join us. Dive into the world of Automathics. Where we cut through the noise and focus on what truly matters. Where you emerge not just as another coder, but as a quantum computing aficionado, armed with newfound power and confidence in math.</p>
-		<p class="mt-2  text-base text-xl leading-7 text-gray-600">Your journey starts now. Say goodbye to math-phobia and hello to a world of endless possibilities in the quantum domain. Welcome to your math makeover. Welcome to the Automathics movement.</p>
-		<p class="font-extrabold text-2xl mt-2">Let&rsquo;s do this, together!</p>
-		<p class="italic text-sm">Husayn Gokal, Founder of Automathics and Your Neighbourhood Quantum Enthusiast.</p>
-	</div>
-	<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-	</dl>
-</div>
-
-
- <div class="container mx-auto">
-    <div class="lg:flex">
-        <div class="lg:w-2/2 lg:order-1">
-            <div class="max-w-6xl sm:text-center p-2">
-                <img class="rounded-xl shadow-lg" src="img/linearAljebraBootcamp.jpeg" alt="Linear Algebra Bootcamp">
+              <h2 class="mt-4 text-xl font-bold">
+                So,
+                <br />
+                What&rsquo;s the secret sauce?
+                <br />
+                <span class="font-normal">Well, let me tell you. </span>
+              </h2>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        aria-hidden="true"
+        class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
+      </div>
+    </div>
+    <!-- Aljebra and how it works section -->
+
+    <div class="py-10">
+      <div class="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
+        <!-- the top backdrop -->
+        <div
+          aria-hidden="true"
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-30">
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-10rem)] sm:w-[52.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "></div>
+        </div>
+
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">
+            Linear Algebra, That&rsquo;s it!
+          </p>
+
+          <p class="mt-6 font-semibold text-lg leading-8 text-gray-600">
+            The golden ticket to understanding quantum computing without
+            drowning in university-level math.
+            <strong>Without Calculus</strong>.
+          </p>
+
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Yeah, I know what you&rsquo;re thinking<br />
+            <strong class="font-bold italic"
+              >&ldquo;But Husayn, don&rsquo;t we need calculus to even start
+              learning Linear Algebra?&rdquo;</strong
+            ><strong class="font-bold italic"> </strong><br />
+            That, my friends, is a <strong>myth</strong>. A tale as old as time,
+            spun by colleges and universities to keep you in the loop of
+            <strong
+              ><span style="color: #e74c3c">endless prerequisites</span></strong
+            >.
+          </p>
+
+          <h1 class="text-3xl font-bold leading-7 text-purple-700 mt-6">
+            Here&rsquo;s the kicker:
+          </h1>
+
+          <p class="text-lg leading-8 text-gray-600">
+            Calculus is great and all, but it&rsquo;s not the hero of our story.
+            Not for the quantum computing journey you&rsquo;re about to embark
+            on. With Automathics, you dive straight into the good stuff.
+            <strong>Linear Algebra</strong>&mdash;the backbone of quantum
+            computing&mdash;stripped of all the fluff and filler that
+            traditional education systems love to throw your way.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-8 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
+          <h1 class="text-3xl font-bold leading-7 text-purple-700">
+            Here&rsquo;s how it works.
+          </h1>
+
+          <p class="my-2 text-lg leading-8 text-gray-600">
+            The bootcamp is <strong>30 days</strong> long, each day building on
+            the ideas in the previous day.
+          </p>
+
+          <p class="text-lg leading-8 text-gray-600">
+            We show you the practical, step-by-step actions necessary to quickly
+            begin applying your knowledge using <strong>coding</strong>,
+            <strong>algorithm</strong> and
+            <strong>research-oriented assignments</strong>.
+          </p>
+
+          <p class="my-4 font-bold text-lg leading-8 text-gray-600">
+            Here&rsquo;s just a glimpse of what you&rsquo;ll discover:
+          </p>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >1</span
+                  >
+                </div>
+                Bootcamp Syllabus (Value - $149):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Think of it as your treasure map outlining every adventure and
+                challenge you&#39;ll face on this journey.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >2</span
+                  >
+                </div>
+                Daily Session Outline (Value - $99):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                No surprises here&mdash;just a clear breakdown of what each day
+                holds in store for you.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >3</span
+                  >
+                </div>
+                LIVE Sessions + Recordings (Value - $499):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                This isn&rsquo;t your average lecture. It&rsquo;s an
+                interactive, live-streamed brain workout with fellow math
+                enthusiasts. Oh, missed a live session? No worries. Catch up
+                with recordings and never miss a beat.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >4</span
+                  >
+                </div>
+                Core Text Access (PDFs) (Value - $249):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Your arsenal of knowledge, accessible anywhere, anytime.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >5</span
+                  >
+                </div>
+                Discord Server Access (Value - $79):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Your very own wizarding community, where help and camaraderie
+                are just a message away.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >6</span
+                  >
+                </div>
+                24/7 Technical Support (Value - $179):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Got a math emergency at 3 AM? We&rsquo;ve got you covered.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >7</span
+                  >
+                </div>
+                Quizzes, Assignments, and a Final Exam (Value - $199):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Because what&rsquo;s a hero without their quests? Show off what
+                you&rsquo;ve learned and how far you&rsquo;ve come. These are
+                your nightly missions to test your skills and push your limits.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-bold text-center text-xl"
+                    >8</span
+                  >
+                </div>
+                Certificate of Participation (Value - $49):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                Proof that you embarked on this epic quest.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="relative pl-16">
+            <dl>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+                  <span class="h-6 w-6 text-white text-center text-xl">9</span>
+                </div>
+                Certificate of Merit (Value - $99):
+              </dt>
+              <dd class="mb-2 text-base leading-7 text-gray-600">
+                For the champions who surpass even their own expectations.
+              </dd>
+            </dl>
+          </div>
+
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"></dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- bonuses section -->
+    <div class="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-30">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-10rem)] sm:w-[52.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
+      </div>
+
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2
+          class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">
+          BONUSES:
+        </h2>
+
+        <p class="mt-1 text-lg font-semibold text-gray-600">
+          We Love to Overdeliver
+        </p>
+      </div>
+
+      <div
+        class="mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              >Bonus #1
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Daily Quote to Start the Day (Value - $59) </a>
+            </h3>
+
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">
+              A little inspiration to kick off your math journey every morning.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              href="#"
+              >Bonus #2
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Extra Resources (Value - $149) </a>
+            </h3>
+
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">
+              Because there&rsquo;s always more to explore, and we&rsquo;re here
+              to guide you.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              href="#"
+              >Bonus #3
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Office Hour Sessions + Recordings (Value - $199) </a>
+            </h3>
+
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">
+              Need a deeper dive into a tricky concept? We&rsquo;ve got extra
+              sessions just for that.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              href="#"
+              >Bonus #4
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Group Study Session (Value - $149) </a>
+            </h3>
+
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">
+              Team up with fellow adventurers to conquer the toughest quests.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              href="#"
+              >Bonus #5
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Pre-Reading Material List (Value - $79) </a>
+            </h3>
+
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              Get a head start on the journey with recommended reads.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span
+              class="relative z-10 rounded-full bg-purple-600 px-3 py-1.5 font-medium text-white hover:bg-purple-500"
+              href="#"
+              >Bonus #6
+            </span>
+          </div>
+
+          <div class="group relative">
+            <h3
+              class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">Supplementary Text Access (Value - $149) </a>
+            </h3>
+
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              Dive deeper into the math with additional texts, on us.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="mx-auto max-w-2xl mt-10 text-center">
+        <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900">
+          All together, this package is valued at
+          <span class="text-3xl text-purple-600">$2,385</span>.
+        </p>
+
+        <p class="leading-10 text-gray-600">
+          To be honest, it&#39;s worth more than that!
+        </p>
+      </div>
+
+      <!-- the bottom backdrop -->
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-4xl sm:text-center">
+        <p class="mt-5 text-lg leading-8 text-gray-600">
+          This bootcamp is the sum total of the wisdom I gained over
+          <strong
+            >half a year of <u>struggle</u>, <u>failure</u>,
+            <u>experimentation</u></strong
+          >&mdash;and
+          <strong><span style="color: #27ae60">eventual success</span></strong
+          >. If someone had handed me this roadmap at the start, imagine the
+          hours, the days, heck, the months of frustration I could have
+          bypassed.
+        </p>
+        <p class="mt-4 text-lg leading-8 text-gray-600">
+          Not just the time saved, but the leap towards a richer, more
+          fulfilling journey into quantum computing.
+        </p>
+        <h2 class="text-2xl my-4 font-bold tracking-tight text-purple-700">
+          Are you beginning to get the picture?
+        </h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          <strong>Here&#39;s the deal:</strong> Apply what we teach you in this
+          bootcamp, and you could <u><strong>dodge a bullet</strong></u
+          >. Six months of trial and error, confusion, and head-scratching in
+          your quantum pursuit could
+          <em
+            ><span style="color: #27ae60"><strong>vanish</strong></span></em
+          >.
+        </p>
+        <h2 class="text-3xl my-4 font-bold tracking-tight text-purple-700">
+          So given all that...
+        </h2>
+        <p class="mt-2 text-xl font-bold leading-8 text-gray-600">
+          How much would YOU invest for a shortcut like this?
+        </p>
+        <p class="mt-2 text-xl leading-8 text-gray-600">
+          I&rsquo;d have shelled out
+          <strong><span style="color: #c0392b">$2,000</span></strong> in a
+          heartbeat back in the day, knowing it&rsquo;d save me buckets of time
+          and stress.
+        </p>
+        <p class="mt-2 text-xl leading-8 text-gray-600">
+          Now when considering how to price this bootcamp, I realized that
+          charging $2,000 would put this knowledge out of reach for most
+          enthusiasts&mdash;the very people I wanted to help. And my goal here?
+          <strong
+            >To light the path for folks like you the dreamers, the doers, the
+            future change makers of the quantum realm.</strong
+          >
+        </p>
+      </div>
+
+      <div
+        class="mx-auto mt-5 max-w-2xl rounded-3xl lg:mx-0 lg:flex lg:max-w-none">
+        <div class="lg:flex-auto lg:mt-8">
+          <p class="text-base text-xl mb-4 leading-7 text-gray-600">
+            After a lot of thought, I decided to set the price at an affordable
+            <span class="font-bold text-4xl text-purple-700">$299</span>.
+          </p>
+          <p class="text-base text-xl leading-7 text-gray-600">
+            <span class="pb-3 block"
+              >This investment in yourself is one that will pay off
+              <em><strong>many times over</strong></em
+              >.
+            </span>
+            Because, as a quantum enthusiast, you have a rare gift: You&rsquo;re
+            already in a field that is highly sought after. And this will only
+            increase as time goes on. And when you use the tools I will give you
+            (for less than the cost of a new Playstation), you can apply some
+            leverage to those skills and results can be truly amazing.
+          </p>
+        </div>
+
+        <div class="my-4 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div
+            class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
+            <div class="mx-auto">
+              <p class="text-base font-bold text-purple-600">
+                Linear Algebra Bootcamp
+              </p>
+              <p class="text-sm text-purple-600">
+                Starting on <strong>July 15</strong>.
+              </p>
+              <p class="mt-3 flex items-baseline justify-center gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-purple-700"
+                  >$299</span
+                >
+              </p>
+              <script
+                async
+                src="https://js.stripe.com/v3/buy-button.js"></script>
+
+              <stripe-buy-button
+                buy-button-id="buy_btn_1P8qo8HpEhQbEAOITRtTBeyi"
+                publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY">
+              </stripe-buy-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 py-5 my-5 lg:overflow-visible">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto mt-8 max-w-2xl rounded-3xl lg:mx-0 lg:flex lg:max-w-none gap-10">
+          <div class="lg:flex-auto">
+            <p class="mt-4 text-xl leading-8 text-gray-300">
+              <span style="color: #8832d1"
+                ><span class="text-2xl text-extrabold text-white"
+                  >Here&rsquo;s the best part:</span
+                ></span
+              >
+              if Calculus is still a mountain you want to climb, we&rsquo;re
+              here with the gear, the guides, and the game plan to help you
+              conquer it. Coming up within the
+              <strong>first two weeks of September</strong>, we&rsquo;re
+              launching our Calculus I program, perfect for those of you looking
+              to broaden your mathematical toolkit even further.
+            </p>
+            <p class="mt-4 text-xl leading-8 text-gray-300">
+              Imagine mastering both Linear Algebra and Calculus I, laying down
+              a solid foundation that will supercharge your understanding of
+              quantum computing and beyond.
+            </p>
+            <p class="mt-4 text-xl leading-8 text-gray-300">
+              For those eager to jump ahead and secure their spot, we&rsquo;ve
+              got a special deal: Pre-register for both Linear Algebra and
+              Calculus I for just
+              <span class="font-bold text-4xl text-purple-700">$499</span>.
+            </p>
+            <p class="mt-4 text-xl leading-8 text-gray-300">
+              That&rsquo;s right&mdash;you get access to both powerhouse
+              programs at an unbeatable price, ensuring you&rsquo;re
+              well-equipped to tackle the challenges and opportunities of the
+              quantum realm head-on.
+            </p>
+            <p class="mt-4 text-xl leading-8 text-gray-300">
+              This bundled offer is designed for the go-getters, the
+              ahead-of-the-curvers, the quantum enthusiasts who understand the
+              value of a comprehensive math education. Don&rsquo;t miss your
+              chance to be part of this. Secure your spot in our Calculus I
+              program and take your first step towards becoming a math wiz with
+              mastery over both Linear Algebra and Calculus I.
+            </p>
+          </div>
+
+          <div
+            class="lg:sticky p-2 lg:mt-10 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div
+              class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
+              <div class="mx-auto">
+                <p class="text-base font-bold text-xl text-purple-600">
+                  Linear Algebra + Calculus I Bootcamp
+                </p>
+                <p class="text-sm text-purple-600">
+                  Linear Algebra starting on <strong>July 15</strong>.
+                </p>
+                <p class="text-sm text-purple-600"></p>
+                <p class="text-sm text-purple-600">
+                  Calculus I starting on <strong>September 15 </strong>.
+                </p>
+                <p class="mt-2 flex items-baseline justify-center gap-x-2">
+                  <span
+                    class="text-2xl line-through font-bold tracking-tight text-purple-600"
+                    >$599</span
+                  >
+                </p>
+                <p class="mt-4 flex items-baseline justify-center gap-x-2">
+                  <span
+                    class="text-5xl font-bold tracking-tight text-purple-700"
+                    >$499</span
+                  >
+                </p>
+
+                <script
+                  async
+                  src="https://js.stripe.com/v3/buy-button.js"></script>
+
+                <stripe-buy-button
+                  buy-button-id="buy_btn_1P8rDUHpEhQbEAOItlp2GPoN"
+                  publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY">
+                </stripe-buy-button>
+                <p class="mt-4 text-xs leading-5 text-gray-600">
+                  25% Off | Early-Bird Offer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        aria-hidden="true"
+        class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-4xl sm:text-center my-6">
+        <p class="mt-6 text-base text-xl leading-7 text-gray-600">
+          Automathics isn&rsquo;t just about getting good at math. It&rsquo;s
+          about turning math into your playground. From dread to headway, we
+          make the journey feel like a game&mdash;your moves, your pace,
+          automatic. Imagine shifting from &quot;I can&#39;t&quot; to &quot;I
+          just did&quot; before you&rsquo;ve even blinked. That&#39;s us,
+          breaking down barriers and building up brainpower.
+        </p>
+        <h2 class="text-2xl my-4 font-bold tracking-tight text-purple-700">
+          So then, to summarize - &ldquo;Why Automathics?&rdquo;
+        </h2>
+        <p class="mt-2 text-base text-xl leading-7 text-gray-600">
+          Because it&rsquo;s time. Time to break free from the chains of
+          math-phobia. Time to use your summer not for aimless scrolling or
+          video gaming but for transforming yourself into a math wizard, ready
+          to tackle the quantum realm head-on.
+        </p>
+        <p class="mt-2 text-base text-xl leading-7 text-gray-600">
+          Automathics isn&rsquo;t just a bootcamp; it&rsquo;s a movement. A
+          community of like-minded individuals ready to demystify math and stop
+          numbers from bossing them around. And it all starts with you.
+          Yes,&nbsp;<span class="font-bold text-lg">YOU!</span>
+        </p>
+        <p class="mt-2 text-base text-xl leading-7 text-gray-600">
+          Join us. Dive into the world of Automathics. Where we cut through the
+          noise and focus on what truly matters. Where you emerge not just as
+          another coder, but as a quantum computing aficionado, armed with
+          newfound power and confidence in math.
+        </p>
+        <p class="mt-2 text-base text-xl leading-7 text-gray-600">
+          Your journey starts now. Say goodbye to math-phobia and hello to a
+          world of endless possibilities in the quantum domain. Welcome to your
+          math makeover. Welcome to the Automathics movement.
+        </p>
+        <p class="font-extrabold text-2xl mt-2">
+          Let&rsquo;s do this, together!
+        </p>
+        <p class="italic text-sm">
+          Husayn Gokal, Founder of Automathics and Your Neighbourhood Quantum
+          Enthusiast.
+        </p>
+      </div>
+      <dl
+        class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"></dl>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="lg:flex">
+        <div class="lg:w-2/2 lg:order-1">
+          <div class="max-w-6xl sm:text-center p-2">
+            <img
+              class="rounded-xl shadow-lg"
+              src="img/linearAljebraBootcamp.jpeg"
+              alt="Linear Algebra Bootcamp" />
+          </div>
         </div>
         <div class="lg:w-1/3 lg:order-2 p-2">
-            <div class="the second part">
-                <div class="relative">
-                    <div class="rounded-2xl bg-purple-100 py-6 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
-                        <div class="mx-auto">
-                            <p class="text-base font-bold text-xl text-purple-600">Linear Algebra + Calculus I Bootcamp</p>
-                            <p class="text-sm text-purple-600">Linear Algebra starting on <strong>May 15</strong>.</p>
-                            <p class="text-sm text-purple-600"></p>
-                            <p class="text-sm text-purple-600">Calculus I starting on <strong>August 1</strong>.</p>
-                            <p class="mt-2 flex items-baseline justify-center gap-x-2"><span class="text-2xl line-through font-bold tracking-tight text-purple-600">$599</span> <span class="text-5xl font-bold tracking-tight text-purple-700">$499</span></p>
-														
-														<script async
-															src="https://js.stripe.com/v3/buy-button.js">
-														</script>
+          <div class="the second part">
+            <div class="relative">
+              <div
+                class="rounded-2xl bg-purple-100 py-6 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
+                <div class="mx-auto">
+                  <p class="text-base font-bold text-xl text-purple-600">
+                    Linear Algebra + Calculus I Bootcamp
+                  </p>
+                  <p class="text-sm text-purple-600">
+                    Linear Algebra starting on <strong>July 15</strong>.
+                  </p>
+                  <p class="text-sm text-purple-600"></p>
+                  <p class="text-sm text-purple-600">
+                    Calculus I starting on <strong>September 15 </strong>.
+                  </p>
+                  <p class="mt-2 flex items-baseline justify-center gap-x-2">
+                    <span
+                      class="text-2xl line-through font-bold tracking-tight text-purple-600"
+                      >$599</span
+                    >
+                    <span
+                      class="text-5xl font-bold tracking-tight text-purple-700"
+                      >$499</span
+                    >
+                  </p>
 
-														<stripe-buy-button
-															buy-button-id="buy_btn_1P8rImHpEhQbEAOIBaiKbS63"
-															publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY"
-														> 
-														</stripe-buy-button>
-                            <p class="mt-1 text-xs leading-5 text-gray-600">25% Off | Early-Bird Offer</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="relative mt-4 lg:mt-4">
-                    <div class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center ">
-                        <div class="mx-auto">
-                            <p class="text-base font-bold text-purple-600">Linear Algebra Bootcamp</p>
-                            <p class="text-sm text-purple-600">Starting on <strong>May 15</strong>.</p>
-                            <p class="mt-3 flex items-baseline justify-center gap-x-2">
-                                <span class="text-5xl font-bold tracking-tight text-purple-700">$299</span>
-                            </p>
-														<script async
-															src="https://js.stripe.com/v3/buy-button.js">
-														</script>
+                  <script
+                    async
+                    src="https://js.stripe.com/v3/buy-button.js"></script>
 
-														<stripe-buy-button
-															buy-button-id="buy_btn_1P8r0VHpEhQbEAOItuv37QYD"
-															publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY"
-														> 
-														</stripe-buy-button>
-												</div>
-                    </div>
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1P8rImHpEhQbEAOIBaiKbS63"
+                    publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY">
+                  </stripe-buy-button>
+                  <p class="mt-1 text-xs leading-5 text-gray-600">
+                    25% Off | Early-Bird Offer
+                  </p>
                 </div>
+              </div>
             </div>
+
+            <div class="relative mt-4 lg:mt-4">
+              <div
+                class="rounded-2xl bg-purple-100 py-10 text-center ring-2 ring-purple-300 shadow lg:flex lg:flex-col lg:justify-center">
+                <div class="mx-auto">
+                  <p class="text-base font-bold text-purple-600">
+                    Linear Algebra Bootcamp
+                  </p>
+                  <p class="text-sm text-purple-600">
+                    Starting on <strong>July 15</strong>.
+                  </p>
+                  <p class="mt-3 flex items-baseline justify-center gap-x-2">
+                    <span
+                      class="text-5xl font-bold tracking-tight text-purple-700"
+                      >$299</span
+                    >
+                  </p>
+                  <script
+                    async
+                    src="https://js.stripe.com/v3/buy-button.js"></script>
+
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1P8r0VHpEhQbEAOItuv37QYD"
+                    publishable-key="pk_live_51MYbOwHpEhQbEAOI8dwjtkbMcATG4wWd13DtBIi2M9drV5as3wnhMVZowsMwfEVN0ak6WSD9hZVGNOA1Te2u68mB00FP1SWKmY">
+                  </stripe-buy-button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>  
 
+    <!-- FAQs section -->
 
-<!-- FAQs section -->
+    <div class="relative overflow-hidden">
+      <div class="mx-auto max-w-7xl px-2 lg:px-8">
+        <div class="py-8 mx-auto max-w-screen-xl">
+          <h2
+            class="mb-4 ml-4 text-4xl tracking-tight font-extrabold text-purple-600">
+            FAQs
+          </h2>
 
-<div class="relative  overflow-hidden">
-	<div class="mx-auto max-w-7xl px-2 lg:px-8">
-		<div class="py-8 mx-auto max-w-screen-xl ">
-			<h2 class="mb-4 ml-4 text-4xl tracking-tight font-extrabold text-purple-600">FAQs</h2>
+          <div id="accordion" class="accordion">
+            <div
+              class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                What are the prerequisites required for this program ?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  A sound knowledge of Python programming, although it doesn
+                  &rsquo;t have to be quantum computing-specific! Here &rsquo;s
+                  a small test by W3Schools that can:
+                  <a
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    href="/docs/getting-started/introduction/"
+                    >get you started</a
+                  >. <br /><br />
+                </div>
+              </div>
+            </div>
 
-			<div id="accordion" class="accordion">
-				<div class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
-						What are the prerequisites required for this program ? 
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							A sound knowledge of Python programming, although it doesn
-								&rsquo;t have to be quantum computing-specific! Here
-								&rsquo;s a small test by W3Schools that can: 
-								<a class="text-blue-600 dark:text-blue-500 hover:underline" href="/docs/getting-started/introduction/">get you started</a>.
-							<br><br>
+            <div
+              class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                I&#39;ve always struggled with math. Is this program really for
+                me?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  Our approach is tailored to transform math from a source of
+                  anxiety into a tool of empowerment, making it accessible and
+                  engaging for learners of all backgrounds. We break down
+                  complex concepts into digestible, manageable pieces, ensuring
+                  you can grasp each idea fully before moving on.
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                What happens if I don&rsquo;t pass the final exam?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  You will not be able to receive a certificate for the
+                  program.<br /><br />
+                </div>
+              </div>
+            </div>
 
-						</div>
-					</div>
-				</div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                How can I stay motivated when math has always been a source of
+                anxiety for me?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  Your fellow peers, discord admins and instructors are always
+                  there to give you a boost!<br /><br />
+                </div>
+              </div>
+            </div>
 
-				<div class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						I&#39;ve always struggled with math. Is this program really for me? 
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content  bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							Our approach is tailored to transform math from a source of anxiety into a tool of empowerment, 
-								making it accessible and engaging for learners of all backgrounds. We break down complex concepts 
-								into digestible, manageable pieces, ensuring you can grasp each idea fully before moving on.
-								<br><br>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						What happens if I don&rsquo;t pass the final exam? 
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							You will not be able to receive a certificate for the program.<br><br>
-						</div>
-					</div>
-				</div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                How long do I have access to the course materials?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  The material is accessible forever, while the quizzes,
+                  assignments and exams are only accessible during the
+                  program&rsquo;s designated periods.
+                </div>
 
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						How can I stay motivated when math has always been a source of anxiety for me? 
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							Your fellow peers, discord admins and instructors are always there to give you a boost!<br><br>
+                <br /><br />
+              </div>
+            </div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                Are the quizzes and final exam mandatory, and if so what format
+                do they take?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  The quizzes, assignments and final exam are mandatory to
+                  receive a certificate. They take the form of Canvas modules
+                  and Jupyter Notebooks.
+                </div>
 
-						</div>
-					</div>
-				</div>
+                <br /><br />
+              </div>
+            </div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                How does the pre-registration for the Calculus I program work?
 
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-							How long do I have access to the course materials?
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							The material is accessible forever, while the quizzes, assignments and exams are only accessible during the program&rsquo;s designated periods.
-						</div>
-						
-						<br><br>
-					</div>
-				</div>
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						Are the quizzes and final exam mandatory, and if so what format do they take? 
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							The quizzes, assignments and final exam are mandatory to receive a certificate. They take the form of Canvas modules and Jupyter Notebooks.
-						</div>
-						
-						<br><br>
-					</div>
-				</div>
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-				How does the pre-registration for the Calculus I program work? 
-						
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							Once you make your purchase, you will immediately receive a payment receipt from Stripe and a confirmation email saying that your purchase has been successful. This will be followed by an email on how to access the Linear Algebra program. If you bought the Linear Algebra + Calculus I bundle, you will receive an email within the first two weeks of June on how to access your Calculus I program too - simple!
-						</div>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  Once you make your purchase, you will immediately receive a
+                  payment receipt from Stripe and a confirmation email saying
+                  that your purchase has been successful. This will be followed
+                  by an email on how to access the Linear Algebra program. If
+                  you bought the Linear Algebra + Calculus I bundle, you will
+                  receive an email within the first two weeks of September on
+                  how to access your Calculus I program too - simple!
+                </div>
 
-						<br><br>
-					</div>
-				</div>
+                <br /><br />
+              </div>
+            </div>
 
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-							What is the time commitment expected for this program? 						
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							We recommend committing 30 - 40 hours per week, which is around 90 - 120 hours for the entirety of the program.
-						</div>
-						
-						<br><br>
-					</div>
-				</div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                What is the time commitment expected for this program?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  We recommend committing 30 - 40 hours per week, which is
+                  around 90 - 120 hours for the entirety of the program.
+                </div>
 
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						Can I get a refund if I decide the program isn&#39;t for me? 						
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							We have a 7-day money-back guarantee from your date of purchase in case you are unsatisfied with our service. More details on our Refund Policy page.
+                <br /><br />
+              </div>
+            </div>
 
-						</div>
-						<br>
-						<br>
-					</div>
-				</div>
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                Can I get a refund if I decide the program isn&#39;t for me?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  We have a 7-day money-back guarantee from your date of
+                  purchase in case you are unsatisfied with our service. More
+                  details on our Refund Policy page.
+                </div>
+                <br />
+                <br />
+              </div>
+            </div>
 
-				<div class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						Who are the instructors, and what are their qualifications? 			
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							All of our instructors have received or are currently pursuing a PhD in a related field.
+            <div
+              class="accordion-item my-2 rounded-lg border border-purple-400 shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                Who are the instructors, and what are their qualifications?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  All of our instructors have received or are currently pursuing
+                  a PhD in a related field.
+                </div>
+                <br />
+                <br />
+              </div>
+            </div>
+            <div
+              class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
+              <div
+                class="accordion-title bg-purple-200 text-purple-600 flex justify-between items-center px-4 py-3 font-semibold">
+                How is this program different from other online math courses?
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content bg-purple-100 text-slate-700 px-4">
+                <div class="pt-2">
+                  The community is what really brings it all together. Where
+                  else can you send a message at 3 AM and get an answer within a
+                  couple of minutes?
+                </div>
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
 
-						</div>
-						<br>
-						<br>
-					</div>
-				</div>
-				<div class="accordion-item my-2 border border-purple-400 rounded-lg shadow">
-					<div class="accordion-title bg-purple-200  text-purple-600 flex justify-between items-center  px-4 py-3 font-semibold">
-						How is this program different from other online math courses? 					
-						<i class="fas fa-chevron-down"></i>
-					</div>
-					<div class="accordion-content bg-purple-100 text-slate-700 px-4">
-						<div class="pt-2">
-							The community is what really brings it all together. Where else can you send a message at 3 AM and get an answer within a couple of minutes?
+        <div
+          aria-hidden="true"
+          class="absolute left-1/2 top-0 -z-10 -translate-x-1 blur-3xl xl:top-1">
+          <div
+            class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "></div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer container -->
 
-						</div>
-						<br><br>
-					</div>
-				</div>
-		 
-			</div>
+    <footer class="text-center text-gray-300 lg:text-left px-8">
+      <div
+        style="border-top-left-radius: 3.5rem; border-top-right-radius: 3.5rem"
+        class="grad flex flex-col mx-auto max-w-7xl items-center justify-center border-b-0 shadow-lg border-0">
+        <div class="mx-auto py-10">
+          <a href="/">
+            <img alt="" class="w-60 mx-auto" src="img/final-footer.png" />
+          </a>
+        </div>
+        <div class="">
+          <p class="text-slate-100 text-sm">
+            <a href="/terms-service.html">Terms Of Service</a>&nbsp;|&nbsp;
+            <a href="/contact-us.html">Contact Us</a>&nbsp;|&nbsp;
+            <a href="/privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp;
+            <a href="/refund-policy.html">Refund Policy</a>
+          </p>
+        </div>
 
-		</div>
+        <!--Copyright section-->
+        <div class="text-slate-100 pt-6 pb-3">
+          <span>&copy; 2024 Copyright</span>
+          <a class="font-semibold" href="/">Automathics.</a>
+          <a
+            class="text-xs"
+            href="https://github.com/zamanehsani/"
+            target="_blank"
+            >Made by
+            <span class="underline">Zaman</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 
-		<div aria-hidden="true" class="absolute left-1/2 top-0 -z-10 -translate-x-1 blur-3xl xl:top-1">
-			<div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" 
-				style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer container -->
-
-<footer class="text-center text-gray-300 lg:text-left px-8" >
-	<div style="border-top-left-radius: 3.5rem; border-top-right-radius: 3.5rem;"
-	class="grad flex flex-col mx-auto max-w-7xl items-center justify-center  border-b-0 shadow-lg border-0"> 
-		
-		<div class="mx-auto py-10">
-			<a href="/">
-				<img alt="" class="w-60 mx-auto" src="img/final-footer.png" /> 
-			</a>
-		</div>
-		<div class="">
-				<p class="text-slate-100 text-sm">
-					<a href="/terms-service.html">Terms Of Service</a>&nbsp;|&nbsp; 
-					<a href="/contact-us.html">Contact Us</a>&nbsp;|&nbsp; 
-					<a href="/privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp; 
-					<a href="/refund-policy.html">Refund Policy</a>
-				</p>
-		</div>
-		
-			<!--Copyright section-->
-			<div class="text-slate-100 pt-6 pb-3"><span>&copy; 2024 Copyright</span> 
-				<a class="font-semibold" href="/">Automathics.</a> 
-				<a class="text-xs" href="https://github.com/zamanehsani/" target="_blank">Made by 
-					<span class=" underline">Zaman</span>
-				</a>
-			</div>
-
-	</div>
-</footer>
-	
-</body> 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script src="assets/script.js"></script>
-
 </html>

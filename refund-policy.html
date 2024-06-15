@@ -1,143 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="windows-1252"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/favicon.ico" rel="icon" /><script src="https://cdn.tailwindcss.com"></script>
-	<title>Refund Policy</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="assets/styles.css">
-	<link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
-	<meta content="Automathics is about the community" name="description">
-	<meta content="Automathics: step into the realm of quantum" property="og:title">
-	<meta content="add another description of the page..." property="og:description">
-	<meta content="purple #7A4CB4 " name="logo color">
+  <head>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/favicon.ico" rel="icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Refund Policy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+    <meta content="Automathics is about the community" name="description" />
+    <meta
+      content="Automathics: step into the realm of quantum"
+      property="og:title" />
+    <meta
+      content="add another description of the page..."
+      property="og:description" />
+    <meta content="purple #7A4CB4 " name="logo color" />
 
-  	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-836NJJ2BW4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-836NJJ2BW4');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-836NJJ2BW4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-836NJJ2BW4");
+    </script>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              sans: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
 
-<script>
-tailwind.config = {
-	theme: {
-		extend: {
-			colors: {
-				clifford: '#da373d',
-			},
-			fontFamily: {
-						sans: ['Inter'],
-				},
-		}
-	}
-}
-</script>
+    <style>
+      .grad {
+        background-image: linear-gradient(
+          to right bottom,
+          #1e1b4b 50%,
+          #4338ca
+        );
+      }
+    </style>
 
-<style>
-  .grad {
-    background-image: linear-gradient(to right bottom, #1e1b4b 50%, #4338ca);
-  }
-</style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "419012570751817");
+      fbq("track", "PageView");
+    </script>
 
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '419012570751817');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-	<img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=419012570751817&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-</head>
-<body>
-  <div class="relative isolate py-24">
-    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div>
-    
-    <main class="mx-auto max-w-6xl px-8">
-      <div>
-        <h1 class="text-4xl font-bold my-5"> Refund Policy </h1>
-        <h2 class="text-xl font-bold my-2">Eligibility for Full Refund:</h2>
-        <p class="my-2">
-          A full refund is available if a refund request is submitted within five calendar days from the date of purchase.
-        </p>
-  
-        <h2 class="text-xl font-bold my-2"> Refund for Non-Selection by Mentor:</h2>
-        <p class="my-2">
-          Participants who meet the Automathics program requirements but are not selected for a project by a mentor are entitled to a refund. This does not apply if the participant chooses not to select a mentor.
-        </p>
-  
-        <h2 class="text-xl font-bold my-2"> Refund Processing Timeline:</h2>
-        <p class="my-2">
-          Refund requests are processed within a period of 4 to 10 business days following the receipt of the request.
-        </p>
-  
-        <h2 class="text-xl font-bold my-2">Non-Refundable Circumstances: </h2>
-        <p class=" my-2">
-          Refunds are not granted under the following circumstances: Withdrawal from the program after the initial 5-day period, participant's unsatisfactory performance within the program, or participant’s inability to adhere to the program's time commitments.
-        </p>
-  
-        <h2 class="text-xl font-bold my-2">Procedure to Request a Refund:</h2>
-        <p class=" my-2">
-          For refund requests, please contact us at <a class="text-purple-600 underline" href="mailto:support@automathics.com">support@automathics.com</a>  with your full name, registered email address, and a detailed explanation for the refund.
-        </p>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=419012570751817&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="relative isolate py-24">
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
       </div>
-    </main>
-  
-    <div aria-hidden="true" class="absolute inset-x-0 top-60 -z-10 transform-gpu overflow-hidden blur-3xl">
-      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" 
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>    
-  </div>
 
-  <footer class="text-center text-gray-300 lg:text-left px-8" >
-    <div style="border-top-left-radius: 3.5rem; border-top-right-radius: 3.5rem;"
-    class="grad flex flex-col mx-auto max-w-7xl items-center justify-center  border-b-0 shadow-lg border-0"> 
-      
-      <div class="mx-auto py-10">
-        <a href="/">
-          <img alt="" class="w-60 mx-auto" src="img/final-footer.png" /> 
-        </a>
-      </div>
-      <div class="">
-          <p class="text-slate-100 text-sm">
-            <a href="/terms-service.html">Terms Of Service</a>&nbsp;|&nbsp; 
-            <a href="/contact-us.html">Contact Us</a>&nbsp;|&nbsp; 
-            <a href="/privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp; 
-            <a href="/refund-policy.html">Refund Policy</a>
+      <main class="mx-auto max-w-6xl px-8">
+        <div>
+          <h1 class="text-4xl font-bold my-5">Refund Policy</h1>
+          <h2 class="text-xl font-bold my-2">Eligibility for Full Refund:</h2>
+          <p class="my-2">
+            A full refund is available if a refund request is submitted within 7
+            calendar days from the date of purchase.
           </p>
+
+          <h2 class="text-xl font-bold my-2">Refund Processing Timeline:</h2>
+          <p class="my-2">
+            Refund requests are processed within a period of 4 to 10 business
+            days following the receipt of the request.
+          </p>
+
+          <h2 class="text-xl font-bold my-2">Non-Refundable Circumstances:</h2>
+          <p class="my-2">
+            Refunds are not granted under the following circumstances:
+            Withdrawal from the program after the initial 7-day period,
+            participant's unsatisfactory performance within the program, or
+            participant's inability to adhere to the program's time commitments.
+          </p>
+
+          <h2 class="text-xl font-bold my-2">Procedure to Request a Refund:</h2>
+          <p class="my-2">
+            For refund requests, please contact us at
+            <a
+              class="text-purple-600 underline"
+              href="mailto:support@automathics.com"
+              >support@automathics.com</a
+            >
+            with your full name, registered email address, and a detailed
+            explanation for the refund.
+          </p>
+        </div>
+      </main>
+
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 top-60 -z-10 transform-gpu overflow-hidden blur-3xl">
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "></div>
       </div>
-      
-        <!--Copyright section-->
-        <div class="text-slate-100 pt-6 pb-3"><span>&copy; 2024 Copyright</span> 
-          <a class="font-semibold" href="/">Automathics.</a> 
-          <a class="text-xs" href="https://github.com/zamanehsani/" target="_blank">Made by 
-            <span class=" underline">Zaman</span>
+    </div>
+
+    <footer class="text-center text-gray-300 lg:text-left px-8">
+      <div
+        style="border-top-left-radius: 3.5rem; border-top-right-radius: 3.5rem"
+        class="grad flex flex-col mx-auto max-w-7xl items-center justify-center border-b-0 shadow-lg border-0">
+        <div class="mx-auto py-10">
+          <a href="/">
+            <img alt="" class="w-60 mx-auto" src="img/final-footer.png" />
           </a>
         </div>
-  
-    </div>
-  </footer>
-  
+        <div class="">
+          <p class="text-slate-100 text-sm">
+            <a href="/terms-service.html">Terms Of Service</a>&nbsp;|&nbsp;
+            <a href="/contact-us.html">Contact Us</a>&nbsp;|&nbsp;
+            <a href="/privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp;
+            <a href="/refund-policy.html">Refund Policy</a>
+          </p>
+        </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="assets/script.js"></script>
-</body> 
+        <!--Copyright section-->
+        <div class="text-slate-100 pt-6 pb-3">
+          <span>&copy; 2024 Copyright</span>
+          <a class="font-semibold" href="/">Automathics.</a>
+          <a
+            class="text-xs"
+            href="https://github.com/zamanehsani/"
+            target="_blank"
+            >Made by
+            <span class="underline">Zaman</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
